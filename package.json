@@ -1,0 +1,24 @@
+{
+  "name": "second-cli-renderer",
+  "version": "1.0.0",
+  "description": "esm test repo",
+  "main": "index.js",
+  "module": "index.mjs",
+  "author": "hilary lee",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/polyfill": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",``
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "@babel/preset-stage-3": "^7.0.0-beta.42",
+    "@babel/register": "^7.0.0-beta.42",
+    "@std/esm": "^0.25.3",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+	  "start": "node -r @std/esm -r @babel/register -r @babel/polyfill index.mjs"
+  }
+}
