@@ -15,10 +15,11 @@
     "@babel/preset-stage-3": "^7.0.0-beta.42",
     "@babel/register": "^7.0.0-beta.42",
     "@std/esm": "^0.25.3",
+    "esm": "^3.0.7",
     "react": "^16.2.0"
   },
   "devDependencies": {},
   "scripts": {
-	  "start": "node -r @std/esm -r @babel/register -r @babel/polyfill index.mjs"
+    "start": "node -r esm ./index.js"
   }
 }

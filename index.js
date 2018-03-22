@@ -1,8 +1,18 @@
-require = require('@std/esm')(module, {
-	cjs: true
+require = require('esm')(module, {
+	cjs: {
+		namedExports: true,
+		cache: true,
+		extensions: true,
+		interop: false,
+		paths: true,
+		topLevelReturn: true,
+		vars: true
+	},
+	warnings: true,
+	debug: true
 });
 
-require("@babel/polyfill");
+require("@babel/polyfill")
 
 require('@babel/register')({
 	babelrc: false,
